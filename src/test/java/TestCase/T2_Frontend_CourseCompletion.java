@@ -28,10 +28,10 @@ public class T2_Frontend_CourseCompletion extends BaseClass {
 	    
 		
 	}
-@Test
+	@Test
     public void T2_Frontend_Course_Completion() throws Exception {
 	JavascriptExecutor executor = (JavascriptExecutor) driver;
-	SoftAssert softAssert = new SoftAssert();
+	SoftAssert softAssert = new SoftAssert();	
 	fl.loginToUser(driver, BaseURL, adminUsername, adminPassword);
 	driver.get(BaseURL + "course-progress-certificates/");
 	fl.SearchIcon.click();
@@ -64,14 +64,13 @@ public class T2_Frontend_CourseCompletion extends BaseClass {
 	
 //	driver.get(BaseURL + "course-progress-certificates/");
 	
-	System.out.println("download Certificate Successfully.");
+	System.out.println("Download Certificate Successfully.");
 	driver.get(BaseURL + "course-progress-certificates/");
-	Actions action = new Actions(driver);
-	action.moveToElement(fl.AnnualTrainingSelect).build().perform();
-	
-	
-	softAssert.assertTrue(fl.DownloadCert.size() == 1, "Certifcate is Valid");
-
+	System.out.println(fl.CertificateIcon.size());
+	String originalWindowHandle = driver.getWindowHandle();
+	driver.switchTo().window(originalWindowHandle);
+	System.out.println(fl.CertificateIcon.size());
+	softAssert.assertTrue(fl.CertificateIcon.size() == 1, "Certificate is not Valid");
 
 	softAssert.assertAll();
 }

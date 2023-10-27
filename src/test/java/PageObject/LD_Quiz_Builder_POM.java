@@ -125,7 +125,7 @@ public class LD_Quiz_Builder_POM {
 	public WebElement LD_Quiz_Enrollment_Based_days;
 	
 	//Quiz Prerequisites for this drop down we can search the Quiz on this same element
-	@FindBy(xpath = "//textarea[@placeholder='Select an option']")
+	@FindBy(xpath = "//input[@placeholder='Select an option']")
 	public WebElement LD_Quiz_Prerequisite;
 	
 	// Select from searched Quiz Prerequisites
@@ -148,7 +148,7 @@ public class LD_Quiz_Builder_POM {
 	public WebElement LD_QuizCertificate;
 
 	// Search Quiz Certificate
-	@FindBy(xpath = "//span[@title='Search or select a certificate…']") 
+	@FindBy(xpath = "//body/span/span/span/input[1]") 
 	public WebElement LD_SearchQuizCertificate;
 
 	// Select from searched Certificates
@@ -211,7 +211,7 @@ public class LD_Quiz_Builder_POM {
 	public WebElement LD_Quiz_Material;
 	
 	//Quiz Material Area
-	@FindBy(xpath = "//textarea[@id='learndash-quiz-display-content-settings_quiz_materials']")
+	@FindBy(xpath = "//iframe[@id='learndash-quiz-display-content-settings_quiz_materials_ifr']")
 	public WebElement LD_Quiz_MaterialArea;
 	
 	//Topic AutoStart

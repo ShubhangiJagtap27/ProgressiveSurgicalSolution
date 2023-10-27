@@ -8,11 +8,12 @@
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="TestBase.BaseClass" />
-			<!--<class name="LD.LD_Create_Course" />-->
-			<!--<class name="LD.LD_Create_Lesson"/>-->
-			<!--<class name="LD.LD_Create_Quiz"/>-->
-			<!--<class name="LD.LD_Create_Topic"/>-->
-			<class name="TestCase.T2_Frontend_CourseCompletion"/>
+			<!--<class name="LD.LD_Create_Course" />
+			<class name="LD.LD_Create_Lesson"/>
+			<class name="LD.LD_Create_Quiz"/>
+			<class name="LD.LD_Create_Topic"/>
+			<class name="TestCase.T2_Frontend_CourseCompletion"/>-->
+			<class name="LD.LD_Delete_Automation_Data"/>
 	
 			
 		</classes>

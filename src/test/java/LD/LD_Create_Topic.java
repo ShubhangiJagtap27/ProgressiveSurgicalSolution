@@ -23,9 +23,9 @@ public class LD_Create_Topic {
 	String adminP;
 	String IRU;
 	String IRP;
-	String CourseTitle = "IR_Automation_LD_Course";
-	String LessonTitle = "IR_Automation_Lesson 1";
-	String TopicTitle = "A_IR_Automation_LD_Topic";
+	String CourseTitle = "PSS_Automation_LD_Course";
+	String LessonTitle = "PSS_Automation_Lesson 1";
+	String TopicTitle = "PSS_Automation_LD_Topic";
 	
 	
 	@Parameters({ "SiteURL", "AdminUsername", "AdminPassword" })
@@ -45,7 +45,7 @@ public class LD_Create_Topic {
 		adminP = password;
 
 		// Admin Login
-		fl.loginToUser(driver, baseURL, adminU, adminP);
+//		fl.loginToUser(driver, baseURL, adminU, adminP);
 		
 	}
 	

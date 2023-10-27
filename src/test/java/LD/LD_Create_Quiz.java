@@ -20,10 +20,10 @@ public class LD_Create_Quiz {
 	String adminU;
 	String adminP;
 	
-	String CourseTitle = "IR_Automation"; 
-	String LessonTitle = "ABC";
-	String TopicTitle = "IR_Automation_LD_Topic";
-	String QuizTitle = "IR_Automation_LD_Quiz";
+	String CourseTitle = "PSS_Automation_LD_Course"; 
+	String LessonTitle = "PSS_Automation_Lesson 1";
+	String TopicTitle = "PSS_Automation_LD_Topic";
+	String QuizTitle = "PSS_Automation_LD_Quiz";
 
 	@Parameters({ "SiteURL", "AdminUsername", "AdminPassword" })
 	@BeforeClass
@@ -38,7 +38,7 @@ public class LD_Create_Quiz {
 		adminP = password;
 
 		// Admin Login
-		fl.loginToUser(driver, baseURL, adminU, adminP);
+//		fl.loginToUser(driver, baseURL, adminU, adminP);
 
 		// Initializing LD_Lesson Page Object
 		LD_QB = new LD_Quiz_Builder_POM(driver);
@@ -81,8 +81,8 @@ public class LD_Create_Quiz {
 
 		// Quiz Prerequisites
 		LD_QB.LD_Quiz_Prerequisite.click();
-		LD_QB.LD_Quiz_Prerequisite.sendKeys("Annual Training Quiz");
-		LD_QB.LD_SelectSearched_Quiz_Prerequisite("Annual Training Quiz").click();
+		LD_QB.LD_Quiz_Prerequisite.sendKeys("Annual Training");
+		LD_QB.LD_SelectSearched_Quiz_Prerequisite("Annual Training").click();
 
 		// Allowed Users
 		LD_QB.LD_Quiz_Allow_Users.click();
@@ -96,8 +96,8 @@ public class LD_Create_Quiz {
 
 		// Quiz Certificate
 		LD_QB.LD_QuizCertificate.click();
-		LD_QB.LD_SearchQuizCertificate.sendKeys("Annual training (Licensed)");
-		LD_QB.LD_SelectSearchedQuizCertificate("Annual training (Licensed)").click();
+		LD_QB.LD_SearchQuizCertificate.sendKeys("Annual Training (Licensed)");
+		LD_QB.LD_SelectSearchedQuizCertificate("Annual Training (Licensed)").click();
 //		executor.executeScript("arguments[0].click();",LD_QB.LD_SelectSearchedQuizCertificate("Annual training (Licensed)"));
 
 		// Enabling Quiz Saving

@@ -153,7 +153,10 @@ public void loginToUser(WebDriver driver, String baseURL, String username, Strin
 	public WebElement CompleteCourseCert;
 	
 	@FindBy(xpath="//a[normalize-space()='Download Certificate']")
-	public List<WebElement> DownloadCert;
+	public WebElement DownloadCert;
+	
+	@FindBy(xpath="//div[@class='ld-item-list-item-expanded ld-expanded']//span[@class='ld-icon ld-icon-certificate']")
+	public List <WebElement> CertificateIcon;
 	
 	
 	

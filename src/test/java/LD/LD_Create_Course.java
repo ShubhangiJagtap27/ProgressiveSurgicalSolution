@@ -23,7 +23,7 @@ public class LD_Create_Course {
 	String adminP;
 	String IRU;
 	String IRP;
-	String CourseTitle = "IR_Automation_LD_Course";
+	String CourseTitle = "PSS_Automation_LD_Course";
 
 	@Parameters({ "SiteURL", "AdminUsername", "AdminPassword" })
 	@BeforeClass

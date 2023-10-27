@@ -21,7 +21,7 @@ public class LD_Create_Lesson {
 	String adminU;
 	String adminP;
 
-	String LessonTitle = "Z_IR_Automation_LD_Lesson";
+	String LessonTitle = "PSS_Automation_LD_Lesson";
 
 	@Parameters({"SiteURL", "AdminUsername", "AdminPassword" })
 	@BeforeClass
@@ -42,7 +42,7 @@ public class LD_Create_Lesson {
 		adminP = password;
 
 		// Admin Login
-		fl.loginToUser(driver, baseURL, adminU, adminP);
+//		fl.loginToUser(driver, baseURL, adminU, adminP);
 
 	}
 

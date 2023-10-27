@@ -287,11 +287,11 @@ public class LD_Course_Builder_POM {
 	public WebElement LD_CourseMaterialArea;
 
 	// Course Certificate
-	@FindBy(xpath = "//span[@title='Search or select a certificate…']")
+	@FindBy(xpath = "//span[contains(text(),'Search or select a certificate…')]")
 	public WebElement LD_CourseCertificate;
 
 	// Search Course Certificate
-	@FindBy(xpath = "//input[@aria-label='Search']")
+	@FindBy(xpath = "//body/span/span/span/input[1]") 
 	public WebElement LD_SearchCourseCertificate;
 
 	// Select from searched Certificates
